@@ -41,7 +41,7 @@ if (tourBus === 'yes' || tourBus.startsWith('y')){
 } else if (tourBus === 'no' || tourBus.startsWith('n')){
     alert(favBand + ' got us plane tickets to ' + gigLocation + '. We\'re flying first class!');
 } else {
-    alert('Do you know how you\'re getting to ' + gigLocation + '? I\'m riding on the tour bus');
+    alert('Do you know how you\'re getting to ' + gigLocation + '? I\'m riding on the tour bus.');
 }
 
 //Have you tuned your instrument?
@@ -68,7 +68,7 @@ if (soundCheck === 'yes' || soundCheck.startsWith('y')){
     alert('If you\'re not sure if you\'ve done a sound check then ask a roadie for help.');
 }
 
-//Did you get an encore?
+//Did we get an encore?
 const encore = prompt('I had to leave the show early due to a tambourine related injury. Did we get an encore?').toLowerCase();
 console.log('encore: ' + encore);
 
@@ -78,4 +78,19 @@ if (encore === 'yes' || encore.startsWith('y')){
     alert('Sorry, ' + gigLocation + ' was a boring audience and they ruined my tambourine!');
 } else {
     alert(name + ', it\'s either yes or no. We either got an encore or we didn\'t.');
+}
+
+//How many Matt & Kim shows have I been to?
+for (let i = 0; i < 4; i++) {
+    const numShows = parseInt(prompt('Earlier I told you Matt & Kim was my favorite band. How many times do you think I\'ve seen them live?'));
+    console.log('number of shows: ' + numShows);
+
+    if (numShows > 4) {
+        alert('I wish I\'ve been to that many shows!');
+    } else if (numShows < 4){
+        alert('I\'ve been to more than that!');
+    } else if (numShows === 4){
+        alert('That\'s right! ' + name + ', we should see a show together sometime!');
+        break;
+    }
 }
