@@ -53,7 +53,7 @@ if (tuned === 'yes' || tuned.startsWith('y')){
 } else if (tuned === 'no' || tuned.startsWith('n')){
     alert('So, your ' + instrument + ' sound like a dying cat. Bring your ' + instrument + ' over here, I\'ll help you with that.');
 } else {
-    alert('Can you not tune your ' + gigLocation + '?');
+    alert('Can you not tune your ' + instrument + '?');
 }
 
 // Have you done a sound check?
@@ -92,5 +92,34 @@ for (let i = 0; i < 4; i++) {
     } else if (numShows === 4){
         alert('That\'s right! ' + name + ', we should see a show together sometime!');
         break;
+    }
+}
+
+// Name a state where I've seen Matt & Kim play.
+for (let j = 0; j < 6; j++) {
+    const states = ['washington', 'california', 'utah', 'oregon'];
+    const stateGuess = prompt('Each of the 4 times I saw Matt & Kim live it was in a different state. Can you guess one of the States?').toLowerCase();
+    console.log('state guess: ' + stateGuess);
+
+    if (stateGuess === states[0]) {
+        alert('That\'s right! The other states were ' + states.splice(1) + '.');
+        break;
+    } else if (stateGuess === states[1]){
+        const removed = states.splice(1, 1);
+        console.log(removed);
+        alert('That\'s right! The other states were ' + states + '.');
+        break;
+    } else if (stateGuess === states[2]){
+        const removed = states.splice(2, 1);
+        console.log(removed);
+        alert('That\'s right! The other states were ' + states + '.');
+        break;
+    } else if (stateGuess === states[3]){
+        const removed = states.splice(3, 1);
+        console.log(removed);
+        alert('That\'s right! The other states were ' + states + '.');
+        break;
+    } else if (states.includes[stateGuess] = true){
+        alert('Haven\'t seen them in ' + stateGuess + ' yet. Maybe one day.');
     }
 }
