@@ -1,9 +1,14 @@
 'use strict';
 
 // What is your name?
-const name = prompt('What is your name?');
-console.log('their name; ' + name);
-alert('Hello ' + name + '! I\'m Stephanie.');
+
+
+function getName(name) {
+    console.log('their name; ' + name);
+    alert('Hello ' + name + '! I\'m Stephanie.');
+}
+
+getName( prompt('What is your name?'));
 
 // What is your favorite band?
 const favBand = prompt('What is your favorite band?');
