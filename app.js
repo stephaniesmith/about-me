@@ -80,6 +80,10 @@ if (encore === 'yes' || encore.startsWith('y')){
     alert(name + ', it\'s either yes or no. We either got an encore or we didn\'t.');
 }
 
+//Right answers
+
+let rightAsnwers = 0;
+
 //How many Matt & Kim shows have I been to?
 for (let i = 0; i < 4; i++) {
     const numShows = parseInt(prompt('Earlier I told you Matt & Kim was my favorite band. How many times do you think I\'ve seen them live?'));
@@ -91,6 +95,7 @@ for (let i = 0; i < 4; i++) {
         alert('I\'ve been to more than that!');
     } else if (numShows === 4){
         alert('That\'s right! ' + name + ', we should see a show together sometime!');
+        console.log(rightAsnwers++);
         break;
     }
 }
@@ -103,23 +108,29 @@ for (let j = 0; j < 6; j++) {
 
     if (stateGuess === states[0]) {
         alert('That\'s right! The other states were ' + states.splice(1) + '.');
+        console.log(rightAsnwers++);
         break;
     } else if (stateGuess === states[1]){
         const removed = states.splice(1, 1);
         console.log(removed);
         alert('That\'s right! The other states were ' + states + '.');
+        console.log(rightAsnwers++);
         break;
     } else if (stateGuess === states[2]){
         const removed = states.splice(2, 1);
         console.log(removed);
         alert('That\'s right! The other states were ' + states + '.');
+        console.log(rightAsnwers++);
         break;
     } else if (stateGuess === states[3]){
         const removed = states.splice(3, 1);
         console.log(removed);
         alert('That\'s right! The other states were ' + states + '.');
+        console.log(rightAsnwers++);
         break;
     } else if (states.includes[stateGuess] = true){
         alert('Haven\'t seen them in ' + stateGuess + ' yet. Maybe one day.');
     }
 }
+
+alert('Well, ' + name + ', you got ' + rightAsnwers + ' out of 2 questions correct. More importantly, you learned to play the ' + instrument + ' went to ' + gigLocation + ' and had a show with ' + favBand + '!');
