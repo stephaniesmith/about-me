@@ -40,43 +40,43 @@ function gig() {
     const location = prompt('Now that you are part of the band, where would you like to play your first gig?');
     console.log('gig location; ' + location);
     alert('Alright, ' + name + '! Pack your bags and your ' + instrument + '. We are off to ' + location + ' to play with ' + favBand + '!');
-    return gig;
+    return location;
 }
 const gigLocation = gig();
 console.log(gigLocation);
 
-// // //Have you packed your bags for the show?
-// function bags() {
-//     const bagsPacked = prompt('Have you packed your bags for the show?').toLowerCase();
-//     console.log('bags packed: ' + bagsPacked);
-//     if (bagsPacked === 'yes' || bagsPacked.startsWith('y')){
-//         alert('Alright, ' + name + '! I\'m all packed up too so grab your ' + instrument + ' ' + gigLocation + ' awaits!');
-//     } else if (bagsPacked === 'no' || bagsPacked.startsWith('n')){
-//         alert('Alright, ' + name + '. Get it together. We\'re playing ' + instrument + ' for ' + favBand.toUpperCase() + '!     I\'m coming over to help you pack');
-//     } else {
-//         alert('Look, ' + name + '. I\'m going to need a yes or no from you.');
-//     }
-//     return bags; 
-// }
-// bags();
+// //Have you packed your bags for the show?
+function bags() {
+    const packed = prompt('Have you packed your bags for the show?').toLowerCase();
+    console.log('bags packed: ' + packed);
+    if (packed === 'yes' || packed.startsWith('y')){
+        alert('Alright, ' + name + '! I\'m all packed up too so grab your ' + instrument + ' ' + gigLocation + ' awaits!');
+    } else if (packed === 'no' || packed.startsWith('n')){
+        alert('Alright, ' + name + '. Get it together. We\'re playing ' + instrument + ' for ' + favBand.toUpperCase() + '!     I\'m coming over to help you pack');
+    } else {
+        alert('Look, ' + name + '. I\'m going to need a yes or no from you.');
+    }
+}
 
-// //Are you riding on the tour bus?
+bags();
 
-// function bus() {
-//     const tourBus = prompt('Are you riding on the tour bus?').toLowerCase();
-//     console.log('riding tour bus: ' + tourBus);
+//Are you riding on the tour bus?
 
-//     if (tourBus === 'yes' || tourBus.startsWith('y')){
-//         alert('Awesome! We\'re going to get so much bonding time with ' + favBand + '.');
-//     } else if (tourBus === 'no' || tourBus.startsWith('n')){
-//         alert(favBand + ' got us plane tickets to ' + gigLocation + '. We\'re flying first class!');
-//     } else {
-//         alert('Do you know how you\'re getting to ' + gigLocation + '? I\'m riding on the tour bus.');
-//     }
-//     return tourBus;
-// }
+function bus() {
+    const tourBus = prompt('Are you riding on the tour bus?').toLowerCase();
+    console.log('riding tour bus: ' + tourBus);
 
-// bus();
+    if (tourBus === 'yes' || tourBus.startsWith('y')){
+        alert('Awesome! We\'re going to get so much bonding time with ' + favBand + '.');
+    } else if (tourBus === 'no' || tourBus.startsWith('n')){
+        alert(favBand + ' got us plane tickets to ' + gigLocation + '. We\'re flying first class!');
+    } else {
+        alert('Do you know how you\'re getting to ' + gigLocation + '? I\'m riding on the tour bus.');
+    }
+    return tourBus;
+}
+
+bus();
 
 
 // // Have you done a sound check?
