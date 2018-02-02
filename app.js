@@ -1,8 +1,6 @@
-// 'use strict';
+'use strict';
 
-// // What is your name?
-
-
+// What is your name?
 function getName() {
     const usersName = prompt('What is your name?');
     console.log('their name; ' + usersName);
@@ -61,7 +59,6 @@ function bags() {
 bags();
 
 //Are you riding on the tour bus?
-
 function bus() {
     const tourBus = prompt('Are you riding on the tour bus?').toLowerCase();
     console.log('riding tour bus: ' + tourBus);
@@ -112,7 +109,6 @@ function ovation() {
 ovation();
 
 //Right answers
-
 let rightAsnwers = 0;
 
 //How many Matt & Kim shows have I been to?
@@ -135,7 +131,6 @@ function shows() {
 
 shows();
 // Name a state where I've seen Matt & Kim play.
-
 function whichState() {
     for (let j = 0; j < 6; j++) {
         const states = ['washington', 'california', 'utah', 'oregon'];
