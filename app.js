@@ -79,94 +79,97 @@ function bus() {
 bus();
 
 
-// // Have you done a sound check?
-// function sound() {
-//     const soundCheck = prompt('Have you done a sound check?').toLowerCase();
-//     console.log('done sound check: ' + soundCheck);
+// Have you done a sound check?
+function sound() {
+    const soundCheck = prompt('Have you done a sound check?').toLowerCase();
+    console.log('done sound check: ' + soundCheck);
 
-//     if (soundCheck === 'yes' || soundCheck.startsWith('y')){
-//         alert(name + ', get stoked! Our set with ' + favBand + ' is going to be awesome! I\'m ready for my tambourine solo!');
-//     } else if (soundCheck === 'no' || soundCheck.startsWith('n')){
-//         alert('Get to the stage! Got to make sure your ' + instrument + ' sounds beautiful tonight!');
-//     } else {
-//         alert('If you\'re not sure if you\'ve done a sound check then ask a roadie for help.');
-//     }
-// }
+    if (soundCheck === 'yes' || soundCheck.startsWith('y')){
+        alert(name + ', get stoked! Our set with ' + favBand + ' is going to be awesome! I\'m ready for my tambourine solo!');
+    } else if (soundCheck === 'no' || soundCheck.startsWith('n')){
+        alert('Get to the stage! Got to make sure your ' + instrument + ' sounds beautiful tonight!');
+    } else {
+        alert('If you\'re not sure if you\'ve done a sound check then ask a roadie for help.');
+    }
+}
 
-// sound();
-// //Did we get an encore?
-// function ovation() {
-//     const encore = prompt('I had to leave the show early due to a tambourine related injury. Did we get an encore?').toLowerCase();
-//     console.log('encore: ' + encore);
+sound();
 
-//     if (encore === 'yes' || encore.startsWith('y')){
-//         alert('Congrats, ' + name + '! You\'re a rock star now.');
-//     } else if (encore === 'no' || encore.startsWith('n')){
-//         alert('Sorry, ' + gigLocation + ' was a boring audience and they ruined my tambourine!');
-//     } else {
-//         alert(name + ', it\'s either yes or no. We either got an encore or we didn\'t.');
-//     }
-// }
+//Did we get an encore?
+function ovation() {
+    const encore = prompt('I had to leave the show early due to a tambourine related injury. Did we get an encore?').toLowerCase();
+    console.log('encore: ' + encore);
 
-// ovation();
-// Right answers
+    if (encore === 'yes' || encore.startsWith('y')){
+        alert('Congrats, ' + name + '! You\'re a rock star now.');
+    } else if (encore === 'no' || encore.startsWith('n')){
+        alert('Sorry, ' + gigLocation + ' was a boring audience and they ruined my tambourine!');
+    } else {
+        alert(name + ', it\'s either yes or no. We either got an encore or we didn\'t.');
+    }
+}
 
-// let rightAsnwers = 0;
+ovation();
 
-// //How many Matt & Kim shows have I been to?
-// function shows() {
-//     for (let i = 0; i < 4; i++) {
-//         const numShows = parseInt(prompt('Earlier I told you Matt & Kim was my favorite band. How many times do you think I\'ve seen them live?'));
-//         console.log('number of shows: ' + numShows);
+//Right answers
 
-//         if (numShows > 4) {
-//             alert('I wish I\'ve been to that many shows!');
-//         } else if (numShows < 4){
-//             alert('I\'ve been to more than that!');
-//         } else if (numShows === 4){
-//             alert('That\'s right! ' + 'Tasha' +  ', we should see a show together sometime!');
-//             console.log(rightAsnwers++);
-//             break;
-//         }
-//     }
-//     return rightAsnwers;
-// }
+let rightAsnwers = 0;
 
-// shows();
-// // Name a state where I've seen Matt & Kim play.
+//How many Matt & Kim shows have I been to?
+function shows() {
+    for (let i = 0; i < 4; i++) {
+        const numShows = parseInt(prompt('Earlier I told you Matt & Kim was my favorite band. How many times do you think I\'ve seen them live?'));
+        console.log('number of shows: ' + numShows);
 
-// function whichState() {
-//     for (let j = 0; j < 6; j++) {
-//         const states = ['washington', 'california', 'utah', 'oregon'];
-//         const stateGuess = prompt('Each of the 4 times I saw Matt & Kim live it was in a different state. Can you guess one of the States?').toLowerCase();
-//         console.log('state guess: ' + stateGuess);
+        if (numShows > 4) {
+            alert('I wish I\'ve been to that many shows!');
+        } else if (numShows < 4){
+            alert('I\'ve been to more than that!');
+        } else if (numShows === 4){
+            alert('That\'s right! ' + name +  ', we should see a show together sometime!');
+            console.log(rightAsnwers++);
+            break;
+        }
+    }
+}
 
-//         if (stateGuess === states[0]) {
-//             alert('That\'s right! The other states were ' + states.splice(1) + '.');
-//             console.log(rightAsnwers++);
-//             break;
-//         } else if (stateGuess === states[1]){
-//             const removed = states.splice(1, 1);
-//             console.log(removed);
-//             alert('That\'s right! The other states were ' + states + '.');
-//             console.log(rightAsnwers++);
-//             break;
-//         } else if (stateGuess === states[2]){
-//             const removed = states.splice(2, 1);
-//             console.log(removed);
-//             alert('That\'s right! The other states were ' + states + '.');
-//             console.log(rightAsnwers++);
-//             break;
-//         } else if (stateGuess === states[3]){
-//             const removed = states.splice(3, 1);
-//             console.log(removed);
-//             alert('That\'s right! The other states were ' + states + '.');
-//             console.log(rightAsnwers++);
-//             break;
-//         } else if (states.includes[stateGuess] = true){
-//             alert('Haven\'t seen them in ' + stateGuess + ' yet. Maybe one day.');
-//         }
-//     }
-//     return rightAsnwers;
-// }
-// alert('Well, ' + name + ', you got ' + rightAsnwers + ' out of 2 questions correct. More importantly, you learned to play the ' + instrument + ' went to ' + gigLocation + ' and had a show with ' + favBand + '!');
+shows();
+// Name a state where I've seen Matt & Kim play.
+
+function whichState() {
+    for (let j = 0; j < 6; j++) {
+        const states = ['washington', 'california', 'utah', 'oregon'];
+        const stateGuess = prompt('Each of the 4 times I saw Matt & Kim live it was in a different state. Can you guess one of the States?').toLowerCase();
+        console.log('state guess: ' + stateGuess);
+
+        if (stateGuess === states[0]) {
+            alert('That\'s right! The other states were ' + states.splice(1) + '.');
+            console.log(rightAsnwers++);
+            break;
+        } else if (stateGuess === states[1]){
+            const removed = states.splice(1, 1);
+            console.log(removed);
+            alert('That\'s right! The other states were ' + states + '.');
+            console.log(rightAsnwers++);
+            break;
+        } else if (stateGuess === states[2]){
+            const removed = states.splice(2, 1);
+            console.log(removed);
+            alert('That\'s right! The other states were ' + states + '.');
+            console.log(rightAsnwers++);
+            break;
+        } else if (stateGuess === states[3]){
+            const removed = states.splice(3, 1);
+            console.log(removed);
+            alert('That\'s right! The other states were ' + states + '.');
+            console.log(rightAsnwers++);
+            break;
+        } else if (states.includes[stateGuess] = true){
+            alert('Haven\'t seen them in ' + stateGuess + ' yet. Maybe one day.');
+        }
+    }
+}
+
+whichState();
+
+alert('Well, ' + name + ', you got ' + rightAsnwers + ' out of 2 questions correct. More importantly, you learned to play the ' + instrument + ' went to ' + gigLocation + ' and had a show with ' + favBand + '!');
