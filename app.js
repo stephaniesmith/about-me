@@ -4,41 +4,47 @@
 
 
 function getName() {
-    const name = prompt('What is your name?');
-    console.log('their name; ' + name);
-    alert('Hello ' + name + '! I\'m Stephanie.');
-    return name;
+    const usersName = prompt('What is your name?');
+    console.log('their name; ' + usersName);
+    alert('Hello ' + usersName + '! I\'m Stephanie.');
+    return usersName;
 }
 
-const something = getName();
-console.log(something);
+const name = getName();
+console.log(name);
 
 // What is your favorite band?
 function coolBand() {
-    const favBand = prompt('What is your favorite band?');
-    console.log('their favorite band; ' + favBand);
-    alert('Nice choice, ' + something + '. I like ' + favBand + ' too. Matt & Kim is my favorite band. I bet you would be into them!');
-    return favBand;
+    const band = prompt('What is your favorite band?');
+    console.log('their favorite band; ' + band);
+    alert('Nice choice, ' + name + '. I like ' + band + ' too. Matt & Kim is my favorite band. I bet you would be into them!');
+    return band;
 }
 
-coolBand();
-// //If you were in this band what instrument would you play?
-// function yourInstrument() {
-//     const instrument = prompt('If you were in this band what instrument would you play?');
-//     console.log('their instrument; ' + instrument);
-//     alert('Well, ' + name + ' it looks like you play the ' + instrument + ' for ' + favBand + ' and I\'ll be on the tambourine!');
-//     return instrument;
-// }
-// yourInstrument();
+const favBand = coolBand();
+console.log(favBand);
 
-// //Now that you are part of the band, where would you like to play your first gig?
-// function gig() {
-//     const gigLocation = prompt('Now that you are part of the band, where would you like to play your first gig?');
-//     console.log('gig location; ' + gigLocation);
-//     alert('Alright, ' + name + '! Pack your bags and your ' + instrument + '. We are off to ' + gigLocation + ' to play with ' + favBand + '!');
-//     return gig;
-// }
-// gig();
+//If you were in this band what instrument would you play?
+function yourInstrument() {
+    const playInstrument = prompt('If you were in this band what instrument would you play?');
+    console.log('their instrument; ' + playInstrument);
+    alert('Well, ' + name + ' it looks like you play the ' + playInstrument + ' for ' + favBand + ' and I\'ll be on the tambourine!');
+    return playInstrument;
+}
+
+const instrument = yourInstrument();
+console.log(instrument);
+
+//Now that you are part of the band, where would you like to play your first gig?
+function gig() {
+    const location = prompt('Now that you are part of the band, where would you like to play your first gig?');
+    console.log('gig location; ' + location);
+    alert('Alright, ' + name + '! Pack your bags and your ' + instrument + '. We are off to ' + location + ' to play with ' + favBand + '!');
+    return gig;
+}
+const gigLocation = gig();
+console.log(gigLocation);
+
 // // //Have you packed your bags for the show?
 // function bags() {
 //     const bagsPacked = prompt('Have you packed your bags for the show?').toLowerCase();
