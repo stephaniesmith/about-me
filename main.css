@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 2px dashed red;
-}
+} */
 
 header {
     display: flex;
@@ -14,7 +14,6 @@ header {
 } */
 
 #head-shot {
-    display: inline-block;
     min-height: 200px;
     min-width: 200px;
     margin-left: 75px;
@@ -59,9 +58,19 @@ main {
 
 #main-panel {
     background-color: goldenrod;
-    margin: 50px 75px;
+    margin: 0px 45px 0px 75px;
     padding: 15px 30px;
     border-radius: 20px;
+    height: fit-content;
+}
+
+main aside {
+    background-color: grey;
+    margin-right: 75px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 25%;
+    height: fit-content;
 }
 
 #blerb {
@@ -70,11 +79,4 @@ main {
     padding: 5px 10px;
     font-family: Courier New, Courier, monospace;
     border-radius: 15px;
-}
-
-main aside {
-    background-color: goldenrod;
-    margin: 50px 75px;
-    padding: 15px 30px;
-    border-radius: 20px;
 }
