@@ -159,7 +159,7 @@ function whichState() {
             alert('That\'s right! The other states were ' + states + '.');
             console.log(rightAsnwers++);
             break;
-        } else if (states.includes[stateGuess] = true){
+        } else if (states.includes[stateGuess] = false){
             alert('Haven\'t seen them in ' + stateGuess + ' yet. Maybe one day.');
         }
     }
