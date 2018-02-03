@@ -1,31 +1,80 @@
+* {
+    border: 2px dashed red;
+}
+
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+} 
+
+/* header section {
+    position: relative;
+} */
+
+#head-shot {
+    display: inline-block;
+    min-height: 200px;
+    min-width: 200px;
+    margin-left: 75px;
+}
+
+#top-panel {
+    display: inline-block;
+    margin: auto 75px;
+    width: 100%;
+
     text-align: center;
-    background-color: lightseagreen;
-    padding: 15px;
-    margin: 75px 75px 50px 75px;
+    background-color: lightseagreen; 
+    padding: 20px 0px 0px 0px;
     font-family: monospace;
     font-size: 175%;
     border-radius: 20px;
 }
 
-header > h1 {
-    margin: 20px 0px 10px 0px;
+header  h1 {
+    margin: 0px 0px 10px 0px;
 }
-header > p {
-    margin: 0px 0px 20px 0px;
+header  p {
+    margin: 0px 0px 30px 0px;
+}
+
+nav ul {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 0;
+      margin: 0 auto;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+#main-panel {
     background-color: goldenrod;
     margin: 50px 75px;
     padding: 15px 30px;
     border-radius: 20px;
 }
 
-main > section {
+#blerb {
     background-color: rgb(255, 255, 255);
     margin: 20px 10px;
     padding: 5px 10px;
     font-family: Courier New, Courier, monospace;
     border-radius: 15px;
+}
+
+main aside {
+    background-color: goldenrod;
+    margin: 50px 75px;
+    padding: 15px 30px;
+    border-radius: 20px;
 }
