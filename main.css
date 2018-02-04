@@ -83,7 +83,11 @@ main section section {
     margin: 20px 10px;
     font-family: Courier New, Courier, monospace;
     border-radius: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+main p {
+    margin: 15px 30px;
 }
 
 section h2 {
@@ -95,11 +99,17 @@ section h2 {
 } 
 
 #video {
-    margin: 0px auto;
+    margin: 0px auto 10px auto;
     display: block;
 }
 
 #img {
-    margin: 0px auto;
+    margin: 0px auto 10px auto;
     display: block;
+}
+
+#grid {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
