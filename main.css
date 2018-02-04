@@ -23,7 +23,6 @@ header {
     display: inline-block;
     margin: auto 75px;
     width: 100%;
-
     text-align: center;
     background-color: lightseagreen; 
     padding: 20px 0px 0px 0px;
@@ -58,11 +57,14 @@ main {
 }
 
 .main-panel {
+    display: inline-block;
+    width: 100%;
     background-color: rgb(243, 188, 47);
     margin: 0px 45px 0px 75px;
     padding: 15px 30px;
     border-radius: 20px;
     height: fit-content;
+    position: relative;
 }
 
 main aside {
@@ -81,7 +83,6 @@ main section section {
     margin: 20px 10px;
     font-family: Courier New, Courier, monospace;
     border-radius: 15px;
-    position: relative;
     padding-bottom: 25px;
 }
 
@@ -94,6 +95,11 @@ section h2 {
 } 
 
 #video {
+    margin: 0px auto;
+    display: block;
+}
+
+#img {
     margin: 0px auto;
     display: block;
 }
