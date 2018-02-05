@@ -6,7 +6,7 @@
     </head>
     <body>            
         <header>
-            <section class="head-shot">
+            <section id="head-shot">
                 <img src="circle-shot.png" alt='image of Stephanie Smith' title="Stephanie smith">
             </section>
             <section id="top-panel">
@@ -14,29 +14,30 @@
                 <p>I like to make things.</p>
                 <nav>
                     <ul>
-                        <li>About Me</li>
-                        <li>First Job</li>
-                        <li>Outdoor Video</li>
-                        <li>Music Video</li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#first-job">First Job</a></li>
+                        <li><a href="#outdoor">Outdoor Videos</a></li>
+                        <li><a href="#hobbies">Books &amp Podcasts</a></li>
+                        <li><a href="#music">Music Video</a></li>
                     </ul>
                 </nav>
             </section>  
         </header>
         <main>
             <section class="main-panel">
-                <section class="blerb">
+                <section class="blerb" id="about">
                     <h2>About Me</h2>
                     <p>I've always enjoyed creation. Everything from woodworking, to making videos, coding websites, and even making up stories about playing tamborine for a band. In college I studied industrial design and much of my extracurricular time was spent doing improv and theater.</p>
                     <p>After I graduated from Walla Walla University in 2012, I got a job as a woodworker and eventually a position as an industrial designer. For the past few years I've been thinking more and more about designing for the digital space. So in early 2018 I left my job and enrolled in Alchemy Code Lab to learn coding. I made this website in the first week of class. </p>
                     <p>Explore the site to learn a little more about me.</p>
                 </section>                
-                <section class="blerb">
+                <section class="blerb" id="first-job">
                     <h2>First Job</h2>
                     <p>My first job out of college was woodworking large scale sculptures. Here are a few images of me at work.</p>
                     <img id="img" width="550" src="bookends.png" alt='large wooden sculpture' title="Bookends">
                     <img id="img" width="550" src="flower-girl.png" alt='stephanie sculpting' title="Flower Girl">
                 </section> 
-                <section class="blerb">
+                <section class="blerb" id="outdoor">
                     <h2>Outdoor Videos</h2>
                     <p>My friends and I like to get outside whenever we can. Over the past few years I've been making short videos of our adventures.</p>
                     <section id="grid">
@@ -46,8 +47,8 @@
                         <iframe id="video" width="48%" height="auto" src="https://www.youtube.com/embed/-ZAqKoo7Nho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </section>
                 </section>              
-                <section class="blerb">
-                    <h2>Hobbies</h2>
+                <section class="blerb" id="hobbies">
+                    <h2>Books &amp Podcasts</h2>
                     <p>When I'm not making something I like to read and listen to podcasts. Here are a few of my favorites.</p>
                     <section id="grid">
                         <section id="list">
@@ -66,7 +67,7 @@
                         <section id="list">
                                 <h3>Podcasts I Like</h3>
                                 <ol>
-                                    <li><a href="http://thisistheread.com/">The Read</a></li>
+                                    <li id="pod"><a href="http://thisistheread.com/">The Read</a></li>
                                     <li><a href="https://99percentinvisible.org/">99% Invisible</a></li>
                                     <li><a href="https://www.wnycstudios.org/shows/nancy">Nancy</a></li>
                                     <li><a href="http://www.nightvalepresents.com/aliceisntdead/">Alice Isn't Dead</a></li>
@@ -85,7 +86,7 @@
                             </section>
                     </section>    
                 </section>
-                <section class="blerb"> 
+                <section class="blerb" id="music"> 
                     <h2>Music Video</h2>
                     <p>This is my favorite music video by Matt and Kim.</p>
                     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4KA1eXUKZJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -93,7 +94,7 @@
 
             </section>          
             <aside>
-                <p>INFO HERE</p>
+                <h2><a href="#head-shot">Back to Top</a></h2>
             </aside>
         </main> 
         <!-- <script src="app.js"></script> -->
