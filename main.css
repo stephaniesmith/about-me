@@ -78,7 +78,7 @@ main aside {
     top: 30px;
 }
 
-main section section {
+.blerb {
     background-color: rgb(255, 255, 255);
     margin: 20px 10px;
     font-family: Courier New, Courier, monospace;
@@ -112,4 +112,13 @@ section h2 {
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+    margin: auto 25px;
+}
+
+#list {
+    width: 48%;
+}
+
+h3 {
+    margin: 0px;
 }
