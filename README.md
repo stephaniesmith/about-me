@@ -1,11 +1,14 @@
 # Project Name
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment. (i.e. What's your problem domain?) Also a good idea to include a link to a deployed or live version of your project. -->
+This the first project of Bootcamp 1 at Alchmey Code Lab. This project is to learn about html, css, and js by creating a web application about myself. The application is comprised of prompts to help us get to know each other a little better and a page about me.
+
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running?-->
+Answer the questions and look around the site. 
 
+## Contributers
+Stephanie Smith, Tasha Zuniga
 
 <!--
 
